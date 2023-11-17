@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import clsx from "clsx";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
@@ -69,6 +70,8 @@ export default function RootLayout({
             )}
           </section>
         </footer>
+
+        <Analytics />
       </body>
     </html>
   );

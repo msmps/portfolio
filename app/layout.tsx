@@ -33,6 +33,9 @@ export const metadata: Metadata = {
     title: "Matt Simpson",
     card: "summary_large_image",
   },
+  verification: {
+    google: "APic1vOmr1FaqkHieIJWn8cww0Iydw5jALkRt0LZp3o",
+  },
 };
 
 export default function RootLayout({

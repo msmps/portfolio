@@ -4,6 +4,7 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
+      allow: "/",
     },
     sitemap: "https://msmp.me/sitemap.xml",
     host: "https://msmp.me",

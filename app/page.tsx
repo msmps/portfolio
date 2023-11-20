@@ -1,6 +1,13 @@
 import { allPosts } from "@/.contentlayer/generated";
 import { compareDesc } from "date-fns";
+import type { Metadata } from "next";
 import { Post } from "./components/post";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://msmps.me",
+  },
+};
 
 export default function Home() {
   const posts = allPosts.sort((a, b) =>

@@ -5,7 +5,7 @@ import { Post } from "./components/post";
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: "https://msmps.me",
+    canonical: "https://msmp.me",
   },
 };
 

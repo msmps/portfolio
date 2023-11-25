@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.msmp.me"),
+  metadataBase: new URL("https://msmp.me"),
   title: {
     default: "Matt Simpson",
     template: "%s | Matt Simpson",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Matt Simpson",
     description: "Developer, tech enthusiast, and creator.",
-    url: "https://www.msmp.me",
+    url: "https://msmp.me",
     siteName: "Matt Simpson",
     locale: "en_GB",
     type: "website",

@@ -31,7 +31,7 @@ export async function generateMetadata({
       description,
       type: "article",
       publishedTime: date,
-      url: `https://msmp.me/blog/${slug}`,
+      url: `https://www.msmp.me/blog/${slug}`,
     },
     twitter: {
       card: "summary_large_image",

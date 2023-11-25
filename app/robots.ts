@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://msmp.me/sitemap.xml",
-    host: "https://msmp.me",
+    sitemap: "https://www.msmp.me/sitemap.xml",
+    host: "https://www.msmp.me",
   };
 }

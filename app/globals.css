@@ -1,7 +1,44 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-newsreader: var(--font-newsreader);
+}
 
 :root {
-  --stagger: 0;
+  --stagger: 1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+p a,
+ul li a {
+  @apply text-neutral-900 dark:text-white font-[500] underline underline-offset-2 decoration-neutral-400 hover:decoration-neutral-900 transition-colors duration-200;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+@keyframes entry {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animate-entry {
+    animation: entry 0.6s both calc(var(--stagger) * 0.12s);
+  }
 }

@@ -2,7 +2,7 @@ import { ComponentPropsWithoutRef } from "react";
 
 const overrides = {
   h1: (props: any) => (
-    <h1 className="font-medium text-black dark:text-white" {...props} />
+    <h1 className="font-medium text-black dark:text-white mb-0" {...props} />
   ),
   h2: (props: any) => (
     <h2

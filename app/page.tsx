@@ -24,7 +24,7 @@ export default function Home() {
           Writing
         </h2>
 
-        <ul className="space-y-1">
+        <ul className="space-y-1 list-none">
           <li>
             <Link href="/p/hello-world">Hello, world</Link>
           </li>

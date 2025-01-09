@@ -66,7 +66,7 @@ export default function RootLayout({
       >
         <body className="antialiased">
           <div className="min-h-screen flex flex-col p-6 pt-16 md:pt-32">
-            <main className="max-w-[40rem] mx-auto w-full space-y-6">
+            <main className="max-w-2xl mx-auto w-full space-y-6">
               {children}
             </main>
           </div>

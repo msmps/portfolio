@@ -1,7 +1,7 @@
 import { Analytics } from "@vercel/analytics/react";
-import { Geist, Newsreader } from "next/font/google";
-
 import type { Metadata } from "next";
+import { ViewTransitions } from "next-view-transitions";
+import { Geist, Newsreader } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -55,21 +55,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={[
-        "text-neutral-700 bg-white dark:text-neutral-300 dark:bg-neutral-900",
-        geistSans.variable,
-        newsreader.variable,
-      ].join(" ")}
-    >
-      <body className="antialiased">
-        <div className="min-h-screen flex flex-col p-6 md:pt-16">
-          <main className="max-w-2xl mx-auto w-full space-y-6">{children}</main>
-        </div>
+    <ViewTransitions>
+      <html
+        lang="en"
+        className={[
+          "text-neutral-700 bg-white dark:text-neutral-300 dark:bg-neutral-900",
+          geistSans.variable,
+          newsreader.variable,
+        ].join(" ")}
+      >
+        <body className="antialiased">
+          <div className="min-h-screen flex flex-col p-6 md:pt-16">
+            <main className="max-w-2xl mx-auto w-full space-y-6">
+              {children}
+            </main>
+          </div>
 
-        <Analytics />
-      </body>
-    </html>
+          <Analytics />
+        </body>
+      </html>
+    </ViewTransitions>
   );
 }

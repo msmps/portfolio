@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Link } from "next-view-transitions";
 
 export const metadata: Metadata = {
   alternates: {
@@ -25,7 +26,7 @@ export default function Home() {
 
         <ul className="space-y-1">
           <li>
-            <a href="/p/hello-world">Hello, world</a>
+            <Link href="/p/hello-world">Hello, world</Link>
           </li>
         </ul>
       </div>

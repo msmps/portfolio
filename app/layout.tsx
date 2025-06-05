@@ -1,7 +1,7 @@
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
-import { ViewTransitions } from "next-view-transitions";
 import { Geist, Newsreader } from "next/font/google";
+import { unstable_ViewTransition as ViewTransitions } from "react";
 import "./globals.css";
 
 const geistSans = Geist({

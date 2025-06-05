@@ -57,7 +57,14 @@ p {
   }
 }
 
-/* */
+article p code,
+article ul code {
+  @apply font-mono bg-secondary px-1 py-0.5 rounded-md text-sm -translate-y-px;
+}
+
+article ul {
+  @apply list-disc pl-4 space-y-2;
+}
 
 .shiki {
   @apply bg-secondary/50 border border-border/50 rounded-lg;
@@ -84,8 +91,4 @@ p {
 .shiki[title]:before {
   content: attr(title);
   @apply text-xs text-zinc-400 mb-0 block border-b p-3;
-}
-
-p code {
-  @apply font-mono bg-secondary px-1 py-0.5 rounded-md text-sm -translate-y-px;
 }

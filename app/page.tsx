@@ -26,6 +26,9 @@ export default function Home() {
 
         <ul className="space-y-1 list-none">
           <li>
+            <Link href="/p/timestamps">Timestamps That Don’t Suck</Link>
+          </li>
+          <li>
             <Link href="/p/hello-world">Hello, world</Link>
           </li>
         </ul>

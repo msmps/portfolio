@@ -23,27 +23,6 @@ export const metadata: Metadata = {
     template: "%s | Matt Simpson",
   },
   description: "Developer, tech enthusiast, and creator.",
-  openGraph: {
-    title: "Matt Simpson",
-    description: "Developer, tech enthusiast, and creator.",
-    url: "https://msmp.me",
-    siteName: "Matt Simpson",
-    locale: "en_GB",
-    type: "website",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-    },
-  },
-  twitter: {
-    title: "Matt Simpson",
-    card: "summary_large_image",
-  },
   verification: {
     google: "APic1vOmr1FaqkHieIJWn8cww0Iydw5jALkRt0LZp3o",
   },

@@ -1,0 +1,61 @@
+import { Name } from "../../name";
+
+export const metadata = {
+  title: "Timestamps That Don’t Suck",
+  description:
+    "A lightweight npm package that formats timestamps into human-readable strings. Zero dependencies, tiny footprint, perfect alternative to moment.js and date-fns.",
+};
+
+# Timestamps That Don’t Suck
+
+<Name />
+
+I recently released a small open source package called [`little-timestamp`](https://www.npmjs.com/package/little-timestamp) - a tiny, opinionated timestamp formatter.
+
+## Inspiration
+
+The inspiration for this came after seeing a [tweet](https://x.com/steventey/status/1928487987211600104) by [Steven Tey](https://x.com/steventey) outlining the ideal timestamp. His approach resonated with me. It's concise, human-readable, and aligns with how people perceive time. However, I couldn't find a lightweight package that implemented this out of the box. So, I built one.
+
+## What It Does
+
+`little-timestamp` provides a single function that formats timestamps into human-readable strings based on their age:
+
+- Less than 1 second: `Just now`
+- 1–59 seconds: `Ns ago`
+- 1–59 minutes: `Nm ago`
+- 1–23 hours: `Nh ago`
+- Same year: `May 30`
+- Previous years: `Dec 12, 2024`
+
+## Usage
+
+Install the package:
+
+```bash
+npm install little-timestamp
+```
+
+Then, use it in your project:
+
+```typescript
+import { formatTimestamp } from "little-timestamp";
+
+// ...
+
+const formatted = formatTimestamp(timestamp);
+console.log(formatted); // e.g. "5m ago"
+```
+
+## Why It Matters
+
+Timestamps are everywhere: feeds, notifications, and logs, and they play a crucial role in UX. By providing user-friendly time strings, `little-timestamp` helps users understand the recency of events at a glance.
+
+This package is ideal for developers who want a simple, opinionated, zero-dependency solution without the overhead of larger libraries.
+
+Unlike heavier alternatives like moment.js or date-fns, `little-timestamp` focuses solely on relative time formatting with zero dependencies and a tiny footprint.
+
+## Try It Out
+
+You can find `little-timestamp` on [npm](https://www.npmjs.com/package/little-timestamp). It's open source, lightweight, and ready to use in your projects.
+
+If you have feedback or suggestions, feel free to open an issue or contribute on [GitHub](https://github.com/msmps/little-timestamp).

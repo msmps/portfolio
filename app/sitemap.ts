@@ -10,5 +10,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://msmp.me/p/hello-world",
       lastModified: "2025-01-08",
     },
+    {
+      url: "https://msmp.me/p/timestamps",
+      lastModified: "2025-06-05",
+    },
   ];
 }
